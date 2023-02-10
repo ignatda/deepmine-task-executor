@@ -2,10 +2,10 @@
   "name": "deepmine-task-executor",
   "version": "1.0.0",
   "description": "test task for deepmine",
-  "main": "server.ts",
+  "main": "./src/index.ts",
   "scripts": {
-    "start": "NODE_ENV=production && echo $NODE_ENV && node server.ts",
-    "lint": "eslint .",
+    "start": "NODE_ENV=production && echo $NODE_ENV && node ./scripts/app.ts",
+    "elint": "./node_modules/.bin/eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,12 @@
   "devDependencies": {
     "@types/node": "^18.13.0",
     "@types/node-cron": "^3.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
     "typescript": "^4.9.5"
   }
 }
