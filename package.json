@@ -2,8 +2,9 @@
   "name": "deepmine-task-executor",
   "version": "1.0.0",
   "description": "test task for deepmine",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
+    "start": "NODE_ENV=production && echo $NODE_ENV && node server.ts",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +16,11 @@
   "author": "Dmitrii Sherstobitov",
   "license": "MIT",
   "dependencies": {
-    "node-cron" : "3.0.2"
+    "node-cron": "3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@types/node-cron": "^3.0.7",
+    "typescript": "^4.9.5"
   }
 }

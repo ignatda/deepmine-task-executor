@@ -1,6 +1,6 @@
+const nodeCron = require("node-cron")
 console.log("Server started.")
 
-const nodeCron = require("node-cron")
 function compareData() {
     console.log(new Date().toLocaleString())
 }
