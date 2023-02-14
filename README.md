@@ -4,4 +4,4 @@
 
 ## Execution
 1. Go to ther root folder of the project
-2. execute at the terminal: `npm install && npm start`
+2. execute at the terminal: `npm install && npm start` or `npm install && npm run dev`

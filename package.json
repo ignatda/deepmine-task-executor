@@ -4,7 +4,8 @@
   "description": "test task for deepmine",
   "main": "./src/index.ts",
   "scripts": {
-    "start": "NODE_ENV=production && echo $NODE_ENV && node ./scripts/app.ts",
+    "start": "NODE_ENV=production node ./scripts/app.ts",
+    "dev": "node ./scripts/app.ts",
     "elint": "./node_modules/.bin/eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +17,7 @@
   "author": "Dmitrii Sherstobitov",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "16.0.3",
     "node-cron": "3.0.2"
   },
   "devDependencies": {
