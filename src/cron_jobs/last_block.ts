@@ -14,6 +14,6 @@ export async function compareLastBlock() {
     logger.log(LogLevel.info, `Persisted last block number: ${persistedLastBlock}`);
     logger.log(LogLevel.info, `Actual    last block number: ${actualLastBlock}`);
   } catch (error: any) {
-    logger.log(LogLevel.error, `Uncached error at last block schedule: ${error.message}`);
+    logger.log(LogLevel.error, `Uncaught error at last block schedule: ${error.message}`);
   }
 }

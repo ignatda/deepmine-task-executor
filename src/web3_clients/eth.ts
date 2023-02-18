@@ -22,7 +22,7 @@ export async function getLastBlock(): Promise<number> {
     }
   }
 
-  throw new Error(`Failed to get last block from all URLs (${RPC_URLS.join(', ')}) after ${MAX_RETRIES} retries.`);
+  throw new Web3Error(`Failed to get last block from all URLs (${RPC_URLS.join(', ')}) after ${MAX_RETRIES} retries.`);
 }
 
 export class Web3Error extends Error {}

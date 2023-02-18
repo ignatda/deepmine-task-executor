@@ -1,11 +1,12 @@
 version: '3'
 
 services:
-  backend:
+  backend-mock:
     image: node:14-alpine
+    container_name: backend_mock
     working_dir: /app
     volumes:
-      - ./scripts/backend:/app
+      - ./scripts/backend_mock:/app
     environment:
       - NODE_ENV=dev
     command: npm start
@@ -14,8 +15,9 @@ services:
   app:
     build:
       context: .
+    container_name: app
     depends_on:
-      - backend
+      - backend-mock
     environment:
       - NODE_ENV=dev
     ports:
