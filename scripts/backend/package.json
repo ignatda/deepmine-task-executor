@@ -1,0 +1,18 @@
+{
+  "name": "deepmine-task-executor",
+  "version": "1.0.0",
+  "description": "mock api server",
+  "main": "./index.js",
+  "author": "Dmitrii Sherstobitov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ignatda/deepmine-task-executor.git/scripts"
+  },
+  "scripts": {
+    "start": "npm install && node index.js"
+  },
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}

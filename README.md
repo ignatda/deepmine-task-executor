@@ -4,8 +4,8 @@
 
 ## Build
 1. Go to ther root folder of the project
-2. execute at the terminal: `npm install && npm test && npx tsc`
+2. execute at the terminal: `npm install && npm test && npm run build`
 
 ## Execution
 1. Go to ther root folder of the project 
-2. execute at the terminal: `npm start` or `npm run dev` or `npm run production`
+2. execute at the terminal: `npm start` or `npm run dev` or `npm run prod`
